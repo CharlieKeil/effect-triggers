@@ -35,6 +35,7 @@ div {
 
   background-color: limegreen;
   opacity: 0;
+  transition: linear 200ms;
 }
 
 .diamond {
@@ -42,9 +43,9 @@ div {
   right: -100px;
   top: calc(50% - 40px);
   width: 80px;
-
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: linear 300ms;
 }
 
 .panel {
@@ -58,6 +59,7 @@ div {
 
   color: darkgoldenrod;
   text-align: center;
+  transition: linear 300ms;
 }
 
 .panel h2 {
@@ -98,4 +100,43 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
+}
+
+.is-clicked {
+  opacity: 1;
+}
+
+.move {
+  right: 75px;
+}
+
+.collapse {
+  max-height: 0%;
+}
+
+.bounce {
+  animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+    right: 1em;
+  }
+  25% {
+    top: 40px;
+    right: 4em;
+  }
+  50% {
+    top: 15px;
+    right: 8em;
+  }
+  75% {
+    top: 40px;
+    right: 12em;
+  }
+  100% {
+    top: 15px;
+    right: 16em;
+  }
 }
