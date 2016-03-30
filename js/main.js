@@ -1,4 +1,9 @@
 var $body = $('body');
+var $show = $('.btn-show-hide');
+var $move = $('.btn-move');
+var $collapse = $('.btn-collapse-expand');
+var $bounce = $('.btn-bounce');
+var $append = $('.btn-append');
 
 $body.on('click', '.btn-show-hide', function () {
   $('.box').toggleClass('is-clicked');
@@ -13,10 +18,10 @@ $body.on('click', '.btn-collapse-expand', function () {
 });
 
 $body.on('click', '.btn-bounce', function () {
-  $('.circle').toggleClass('bounce');
+  $('.circle').addClass('bounce');
 });
 
-$body.on('animationend', '.circle', function () {
+$('.circle').on('animationend', function () {
   $(this).removeClass('bounce');
 });
 

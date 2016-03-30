@@ -100,7 +100,7 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
-  animation: append linear 200ms;
+  animation: append linear 200ms forwards;
   transition: linear 500ms;
 }
 
